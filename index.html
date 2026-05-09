@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HausElectric – Legal Documents</title>
+  <meta name="description" content="HausElectric uygulaması yasal belgeler, gizlilik politikası ve hizmet şartları." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --gold: #FFBF00;
+      --gold-dim: rgba(255,191,0,0.12);
+      --text: #e6edf3;
+      --muted: #8b949e;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .logo-wrap {
+      width: 72px; height: 72px;
+      background: var(--gold-dim);
+      border: 2px solid var(--gold);
+      border-radius: 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 40px rgba(255,191,0,0.2);
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    h1 span { color: var(--gold); }
+    .subtitle { color: var(--muted); font-size: 1rem; margin-bottom: 3rem; }
+    .cards {
+      display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;
+      max-width: 640px; width: 100%;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      flex: 1; min-width: 240px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+    .card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 0 24px rgba(255,191,0,0.15);
+      transform: translateY(-4px);
+    }
+    .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .card h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.875rem; line-height: 1.5; }
+    .footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; text-align: center; }
+    .badge {
+      display: inline-block;
+      background: var(--gold-dim);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      border-radius: 99px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.75rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-wrap">⚡</div>
+  <span class="badge">LEGAL DOCUMENTS</span>
+  <h1>Haus<span>Electric</span></h1>
+  <p class="subtitle">Endüstriyel Ekipman Yönetim Uygulaması</p>
+
+  <div class="cards">
+    <a href="./privacy-policy.html" class="card">
+      <div class="card-icon">🔒</div>
+      <h2>Gizlilik Politikası</h2>
+      <p>Verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.</p>
+    </a>
+    <a href="./terms-of-service.html" class="card">
+      <div class="card-icon">📋</div>
+      <h2>Hizmet Şartları</h2>
+      <p>Uygulamayı kullanmak için geçerli olan kural ve koşulları içerir.</p>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 HausElectric · Geliştirici: Hasan Hıncal</p>
+    <p style="margin-top:0.4rem;">İletişim: <a href="mailto:info@hauselectric.app" style="color:var(--gold);text-decoration:none;">info@hauselectric.app</a></p>
+  </div>
+</body>
+</html>

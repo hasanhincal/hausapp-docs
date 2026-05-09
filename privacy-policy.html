@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HausElectric – Gizlilik Politikası / Privacy Policy</title>
+  <meta name="description" content="HausElectric uygulaması gizlilik politikası." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1117; --surface: #161b22; --surface2: #1c2128;
+      --border: #30363d; --gold: #FFBF00; --gold-dim: rgba(255,191,0,0.1);
+      --text: #e6edf3; --muted: #8b949e; --link: #58a6ff;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+    header {
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem; display: flex; align-items: center; gap: 1rem;
+      position: sticky; top: 0; z-index: 10;
+    }
+    header a { color: var(--gold); text-decoration: none; font-size: 0.875rem; font-weight: 500; }
+    header a:hover { text-decoration: underline; }
+    .header-sep { color: var(--muted); }
+    .header-title { font-size: 1rem; font-weight: 600; }
+    .container { max-width: 780px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+    .lang-toggle { display: flex; gap: 0.5rem; margin-bottom: 2.5rem; }
+    .lang-btn {
+      padding: 0.4rem 1rem; border-radius: 99px; border: 1px solid var(--border);
+      background: transparent; color: var(--muted); cursor: pointer;
+      font-family: inherit; font-size: 0.875rem; font-weight: 500; transition: all 0.2s;
+    }
+    .lang-btn.active { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); }
+    .doc-section { display: none; }
+    .doc-section.visible { display: block; }
+    .doc-header { border-left: 3px solid var(--gold); padding-left: 1rem; margin-bottom: 2rem; }
+    .doc-header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .doc-header .meta { color: var(--muted); font-size: 0.875rem; }
+    .info-box {
+      background: var(--gold-dim); border: 1px solid rgba(255,191,0,0.3);
+      border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 2.5rem;
+      font-size: 0.9rem; color: #e6c87a;
+    }
+    h2 {
+      font-size: 1.05rem; font-weight: 600; color: var(--gold);
+      margin-top: 2.5rem; margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem; border-bottom: 1px solid var(--border);
+    }
+    p { color: #c9d1d9; margin-bottom: 0.75rem; font-size: 0.95rem; }
+    ul { list-style: none; margin-bottom: 1rem; }
+    ul li { color: #c9d1d9; font-size: 0.95rem; padding: 0.3rem 0 0.3rem 1.5rem; position: relative; }
+    ul li::before { content: '▸'; color: var(--gold); position: absolute; left: 0; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.85rem; }
+    .data-table th { background: var(--surface2); color: var(--gold); font-weight: 600; text-align: left; padding: 0.65rem 0.75rem; border: 1px solid var(--border); }
+    .data-table td { background: var(--surface); color: #c9d1d9; padding: 0.6rem 0.75rem; border: 1px solid var(--border); }
+    .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem; }
+    .contact-box p { margin: 0.3rem 0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<header>
+  <a href="./index.html">← Geri / Back</a>
+  <span class="header-sep">|</span>
+  <span class="header-title">⚡ HausElectric</span>
+</header>
+
+<div class="container">
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="showLang('tr',this)">🇹🇷 Türkçe</button>
+    <button class="lang-btn" onclick="showLang('en',this)">🇬🇧 English</button>
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div id="doc-tr" class="doc-section visible">
+    <div class="doc-header">
+      <h1>Gizlilik Politikası</h1>
+      <p class="meta">Son güncelleme: 9 Mayıs 2025 · HausElectric v1.0</p>
+    </div>
+    <div class="info-box">ℹ️ Bu politika, HausElectric mobil uygulamasının kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklamaktadır.</div>
+
+    <h2>1. Toplanan Veriler</h2>
+    <table class="data-table">
+      <tr><th>Veri Türü</th><th>Açıklama</th><th>Amaç</th></tr>
+      <tr><td>E-posta adresi</td><td>Hesap oluşturma ve giriş</td><td>Kimlik doğrulama</td></tr>
+      <tr><td>Ad Soyad</td><td>Kullanıcı profili</td><td>Kişiselleştirme</td></tr>
+      <tr><td>Organizasyon bilgileri</td><td>Şirket/ekip adı</td><td>İş akışı yönetimi</td></tr>
+      <tr><td>Makine/Ekipman verileri</td><td>Kullanıcı girişleri</td><td>Bakım takibi</td></tr>
+      <tr><td>Fotoğraflar</td><td>Makine ve arıza fotoğrafları</td><td>Belgeleme</td></tr>
+      <tr><td>Push bildirim tokeni</td><td>Cihaz kimlik tokeni</td><td>Bildirim gönderimi</td></tr>
+      <tr><td>Uygulama etkinliği</td><td>Ekran görüntülemeleri, hatalar</td><td>Performans iyileştirme</td></tr>
+    </table>
+
+    <h2>2. Verilerin Kullanım Amacı</h2>
+    <ul>
+      <li>Hesap oluşturma, doğrulama ve yönetimi</li>
+      <li>Bakım, arıza ve iş emri takibinin sağlanması</li>
+      <li>Ekip üyeleri arasında koordinasyon ve iletişim</li>
+      <li>Uygulama içi bildirimler ve uyarılar</li>
+      <li>Uygulama performansını artırmak ve hataları gidermek</li>
+    </ul>
+
+    <h2>3. Üçüncü Taraf Hizmetler</h2>
+    <ul>
+      <li><strong>Supabase</strong> – Veritabanı ve kimlik doğrulama (GDPR uyumlu)</li>
+      <li><strong>Google Firebase</strong> – Push bildirimleri</li>
+      <li><strong>Expo EAS</strong> – Uygulama dağıtımı</li>
+    </ul>
+    <p>Verileriniz pazarlama amacıyla üçüncü taraflarla paylaşılmaz.</p>
+
+    <h2>4. Veri Güvenliği</h2>
+    <ul>
+      <li>Tüm veri iletimi HTTPS/TLS ile şifrelenmektedir</li>
+      <li>Supabase Row Level Security ile veriye yalnızca yetkili kullanıcılar erişebilir</li>
+      <li>Şifreler düz metin olarak saklanmaz</li>
+    </ul>
+
+    <h2>5. Veri Saklama Süresi</h2>
+    <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabı sildiğinizde kişisel verileriniz 30 gün içinde kalıcı olarak silinir.</p>
+
+    <h2>6. Çocukların Gizliliği</h2>
+    <p>HausElectric 18 yaş altı bireyler için tasarlanmamıştır. 18 yaş altı kullanıcılardan bilerek veri toplamıyoruz.</p>
+
+    <h2>7. Kullanıcı Hakları</h2>
+    <ul>
+      <li><strong>Erişim:</strong> Hakkınızdaki verileri görme hakkı</li>
+      <li><strong>Düzeltme:</strong> Yanlış verilerin düzeltilmesini isteme hakkı</li>
+      <li><strong>Silme:</strong> Hesabınızın ve verilerinizin silinmesini talep etme hakkı</li>
+      <li><strong>Taşınabilirlik:</strong> Verilerinizi dışa aktarma hakkı</li>
+    </ul>
+    <p>Hesap silme: Uygulama içi Profil → Hesabı Sil veya aşağıdaki e-posta adresine talep gönderin.</p>
+
+    <h2>8. Politika Değişiklikleri</h2>
+    <p>Bu politikayı güncelleyebiliriz. Önemli değişiklikler uygulama içi bildirim veya e-posta ile duyurulacaktır.</p>
+
+    <h2>9. İletişim</h2>
+    <div class="contact-box">
+      <p><strong>Geliştirici:</strong> Hasan Hıncal</p>
+      <p><strong>Uygulama:</strong> HausElectric</p>
+      <p><strong>E-posta:</strong> <a href="mailto:info@hauselectric.app">info@hauselectric.app</a></p>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="doc-en" class="doc-section">
+    <div class="doc-header">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: May 9, 2025 · HausElectric v1.0</p>
+    </div>
+    <div class="info-box">ℹ️ This policy describes how HausElectric mobile application collects, uses, and protects your personal data.</div>
+
+    <h2>1. Data We Collect</h2>
+    <table class="data-table">
+      <tr><th>Data Type</th><th>Description</th><th>Purpose</th></tr>
+      <tr><td>Email address</td><td>Account creation and login</td><td>Authentication</td></tr>
+      <tr><td>Full name</td><td>User profile</td><td>Personalization</td></tr>
+      <tr><td>Organization info</td><td>Company/team name</td><td>Workflow management</td></tr>
+      <tr><td>Machine/Equipment data</td><td>User-entered records</td><td>Maintenance tracking</td></tr>
+      <tr><td>Photos</td><td>Machine and fault photos</td><td>Documentation</td></tr>
+      <tr><td>Push notification token</td><td>Device identifier token</td><td>Notification delivery</td></tr>
+      <tr><td>App activity</td><td>Screen views, errors</td><td>Performance improvement</td></tr>
+    </table>
+
+    <h2>2. How We Use Your Data</h2>
+    <ul>
+      <li>Account creation, verification, and management</li>
+      <li>Maintenance, fault, and work order tracking</li>
+      <li>Coordination and communication between team members</li>
+      <li>In-app notifications and alerts</li>
+      <li>Improving app performance and fixing issues</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <ul>
+      <li><strong>Supabase</strong> – Database and authentication (GDPR compliant)</li>
+      <li><strong>Google Firebase</strong> – Push notifications</li>
+      <li><strong>Expo EAS</strong> – App distribution</li>
+    </ul>
+    <p>Your data is never shared with third parties for marketing purposes.</p>
+
+    <h2>4. Data Security</h2>
+    <ul>
+      <li>All data transmission is protected by HTTPS/TLS encryption</li>
+      <li>Supabase Row Level Security ensures only authorized users can access data</li>
+      <li>Passwords are never stored in plain text</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>Your data is retained as long as your account is active. When you delete your account, your personal data is permanently deleted within 30 days.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>HausElectric is not designed for individuals under 18. We do not knowingly collect data from users under 18 years of age.</p>
+
+    <h2>7. Your Rights</h2>
+    <ul>
+      <li><strong>Access:</strong> Right to view data we hold about you</li>
+      <li><strong>Correction:</strong> Right to request correction of inaccurate data</li>
+      <li><strong>Deletion:</strong> Right to request deletion of your account and data</li>
+      <li><strong>Portability:</strong> Right to export your data</li>
+    </ul>
+    <p>Account deletion: Use Profile → Delete Account in-app, or email us at the address below.</p>
+
+    <h2>8. Policy Changes</h2>
+    <p>We may update this policy. Significant changes will be announced via in-app notification or email.</p>
+
+    <h2>9. Contact</h2>
+    <div class="contact-box">
+      <p><strong>Developer:</strong> Hasan Hıncal</p>
+      <p><strong>Application:</strong> HausElectric</p>
+      <p><strong>Email:</strong> <a href="mailto:info@hauselectric.app">info@hauselectric.app</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>© 2025 HausElectric · Geliştirici / Developer: Hasan Hıncal</footer>
+
+<script>
+  function showLang(lang, btn) {
+    document.querySelectorAll('.doc-section').forEach(el => el.classList.remove('visible'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('doc-' + lang).classList.add('visible');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
