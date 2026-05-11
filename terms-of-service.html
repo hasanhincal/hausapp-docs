@@ -1,221 +1,389 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HausElectric – Hizmet Şartları / Terms of Service</title>
-  <meta name="description" content="HausElectric uygulaması hizmet şartları ve kullanım koşulları." />
+  <title>Hasolve – Hizmet Şartları / Terms of Service</title>
+  <meta name="description" content="Hasolve uygulaması hizmet şartları ve kullanım koşulları." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     :root {
-      --bg: #0d1117; --surface: #161b22; --surface2: #1c2128;
-      --border: #30363d; --gold: #FFBF00; --gold-dim: rgba(255,191,0,0.1);
-      --text: #e6edf3; --muted: #8b949e; --link: #58a6ff;
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface2: #1c2128;
+      --border: #30363d;
+      --gold: #FFBF00;
+      --gold-dim: rgba(255, 191, 0, 0.1);
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --link: #58a6ff;
     }
-    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
     header {
-      background: var(--surface); border-bottom: 1px solid var(--border);
-      padding: 1.25rem 2rem; display: flex; align-items: center; gap: 1rem;
-      position: sticky; top: 0; z-index: 10;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    header a { color: var(--gold); text-decoration: none; font-size: 0.875rem; font-weight: 500; }
-    header a:hover { text-decoration: underline; }
-    .header-sep { color: var(--muted); }
-    .header-title { font-size: 1rem; font-weight: 600; }
-    .container { max-width: 780px; margin: 0 auto; padding: 3rem 2rem 5rem; }
-    .lang-toggle { display: flex; gap: 0.5rem; margin-bottom: 2.5rem; }
+
+    header a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .header-sep {
+      color: var(--muted);
+    }
+
+    .header-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .lang-toggle {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+
     .lang-btn {
-      padding: 0.4rem 1rem; border-radius: 99px; border: 1px solid var(--border);
-      background: transparent; color: var(--muted); cursor: pointer;
-      font-family: inherit; font-size: 0.875rem; font-weight: 500; transition: all 0.2s;
+      padding: 0.4rem 1rem;
+      border-radius: 99px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
     }
-    .lang-btn.active { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); }
-    .doc-section { display: none; }
-    .doc-section.visible { display: block; }
-    .doc-header { border-left: 3px solid var(--gold); padding-left: 1rem; margin-bottom: 2rem; }
-    .doc-header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .doc-header .meta { color: var(--muted); font-size: 0.875rem; }
+
+    .lang-btn.active {
+      background: var(--gold-dim);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .doc-section {
+      display: none;
+    }
+
+    .doc-section.visible {
+      display: block;
+    }
+
+    .doc-header {
+      border-left: 3px solid var(--gold);
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .doc-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-header .meta {
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
     .info-box {
-      background: var(--gold-dim); border: 1px solid rgba(255,191,0,0.3);
-      border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 2.5rem;
-      font-size: 0.9rem; color: #e6c87a;
+      background: var(--gold-dim);
+      border: 1px solid rgba(255, 191, 0, 0.3);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.9rem;
+      color: #e6c87a;
     }
+
     h2 {
-      font-size: 1.05rem; font-weight: 600; color: var(--gold);
-      margin-top: 2.5rem; margin-bottom: 0.75rem;
-      padding-bottom: 0.4rem; border-bottom: 1px solid var(--border);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
     }
-    p { color: #c9d1d9; margin-bottom: 0.75rem; font-size: 0.95rem; }
-    ul { list-style: none; margin-bottom: 1rem; }
-    ul li { color: #c9d1d9; font-size: 0.95rem; padding: 0.3rem 0 0.3rem 1.5rem; position: relative; }
-    ul li::before { content: '▸'; color: var(--gold); position: absolute; left: 0; }
+
+    p {
+      color: #c9d1d9;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      color: #c9d1d9;
+      font-size: 0.95rem;
+      padding: 0.3rem 0 0.3rem 1.5rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '▸';
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+    }
+
     .warning-box {
-      background: rgba(255,80,80,0.08); border: 1px solid rgba(255,80,80,0.25);
-      border-radius: 12px; padding: 1rem 1.25rem; margin: 1rem 0;
-      font-size: 0.9rem; color: #ff8080;
+      background: rgba(255, 80, 80, 0.08);
+      border: 1px solid rgba(255, 80, 80, 0.25);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #ff8080;
     }
-    .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; margin-top: 2rem; }
-    .contact-box p { margin: 0.3rem 0; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .contact-box p {
+      margin: 0.3rem 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
   </style>
 </head>
+
 <body>
-<header>
-  <a href="./index.html">← Geri / Back</a>
-  <span class="header-sep">|</span>
-  <span class="header-title">⚡ HausElectric</span>
-</header>
+  <header>
+    <a href="./index.html">← Geri / Back</a>
+    <span class="header-sep">|</span>
+    <span class="header-title">⚡ Hasolve</span>
+  </header>
 
-<div class="container">
-  <div class="lang-toggle">
-    <button class="lang-btn active" onclick="showLang('tr',this)">🇹🇷 Türkçe</button>
-    <button class="lang-btn" onclick="showLang('en',this)">🇬🇧 English</button>
+  <div class="container">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="showLang('tr',this)">🇹🇷 Türkçe</button>
+      <button class="lang-btn" onclick="showLang('en',this)">🇬🇧 English</button>
+    </div>
+
+    <!-- TÜRKÇE -->
+    <div id="doc-tr" class="doc-section visible">
+      <div class="doc-header">
+        <h1>Hizmet Şartları</h1>
+        <p class="meta">Son güncelleme: 9 Mayıs 2025 · Hasolve v1.0</p>
+      </div>
+      <div class="info-box">ℹ️ Hasolve'i kullanmadan önce lütfen bu şartları dikkatlice okuyun. Uygulamayı
+        kullanarak bu şartları kabul etmiş sayılırsınız.</div>
+
+      <h2>1. Hizmetin Tanımı</h2>
+      <p>Hasolve, endüstriyel ekipman yönetimi, arıza takibi, bakım planlama ve ekip koordinasyonu için
+        geliştirilmiş bir mobil uygulamadır. Uygulama; makine kaydı, arıza bildirimi, iş emri oluşturma ve ekip
+        iletişimi gibi özellikler sunmaktadır.</p>
+
+      <h2>2. Kabul Koşulları</h2>
+      <p>Uygulamayı indirerek veya kullanarak bu Hizmet Şartları'nı ve Gizlilik Politikamızı kabul etmiş olursunuz. Bu
+        şartları kabul etmiyorsanız uygulamayı kullanmayınız.</p>
+      <ul>
+        <li>18 yaşından büyük olmanız gerekmektedir</li>
+        <li>Hesap bilgilerinizi doğru ve güncel tutmakla yükümlüsünüz</li>
+        <li>Hesabınızın güvenliğinden siz sorumlusunuz</li>
+      </ul>
+
+      <h2>3. Hesap Oluşturma ve Kullanım</h2>
+      <ul>
+        <li>Kayıt için geçerli bir e-posta adresi zorunludur</li>
+        <li>Her kişi yalnızca bir hesap oluşturabilir</li>
+        <li>Hesap bilgilerini başkalarıyla paylaşmak yasaktır</li>
+        <li>Şifrenizi güvende tutmak sizin sorumluluğunuzdadır</li>
+      </ul>
+
+      <h2>4. Kabul Edilemez Kullanımlar</h2>
+      <div class="warning-box">⚠️ Aşağıdaki kullanımlar kesinlikle yasaktır ve hesabın sonlandırılmasına yol açabilir.
+      </div>
+      <ul>
+        <li>Yasadışı amaçlarla kullanım</li>
+        <li>Diğer kullanıcıları rahatsız etme veya taciz etme</li>
+        <li>Sisteme zararlı kod veya virüs yükleme</li>
+        <li>Uygulamanın tersine mühendislik ile çözümlenmesi</li>
+        <li>Başka kullanıcıların hesaplarına yetkisiz erişim</li>
+        <li>Otomatik botlar veya scriptlerle sisteme yük bindirme</li>
+      </ul>
+
+      <h2>5. Fikri Mülkiyet</h2>
+      <p>Hasolve uygulaması, tüm içerikleri, logosu ve markası Hasan Hıncal'a aittir ve telif hakkı yasaları ile
+        korunmaktadır. Kullanıcılar, uygulamayı yalnızca kişisel ve ticari amaçlarla kullanabilir; kopyalayamaz,
+        değiştiremez veya dağıtamaz.</p>
+
+      <h2>6. Hizmet Kesintileri ve Sorumluluk Reddi</h2>
+      <ul>
+        <li>Hizmeti kesintisiz sunmayı hedefliyoruz, ancak %100 uptime garantisi vermiyoruz</li>
+        <li>Bakım, güncelleme veya teknik sorunlardan kaynaklı kesintilerde sorumluluğumuz bulunmamaktadır</li>
+        <li>Kullanıcı verilerinden kaynaklanan hatalar için sorumluluk kabul etmiyoruz</li>
+      </ul>
+
+      <h2>7. Hesap Sonlandırma</h2>
+      <p>Bu şartları ihlal etmeniz durumunda hesabınız önceden bildirim yapılmaksızın sonlandırılabilir. Hesabınızı
+        istediğiniz zaman uygulama üzerinden veya e-posta ile silebilirsiniz.</p>
+
+      <h2>8. Değişiklikler</h2>
+      <p>Bu şartları güncelleme hakkını saklı tutarız. Önemli değişiklikler uygulama içi bildirim veya e-posta ile
+        duyurulacaktır. Değişiklikler yayınlandıktan sonra uygulamayı kullanmaya devam etmeniz, yeni şartları kabul
+        ettiğiniz anlamına gelir.</p>
+
+      <h2>9. Uygulanacak Hukuk</h2>
+      <p>Bu şartlar Türkiye Cumhuriyeti kanunlarına tabidir. Olası anlaşmazlıklarda Türk mahkemeleri yetkilidir.</p>
+
+      <h2>10. İletişim</h2>
+      <div class="contact-box">
+        <p><strong>Geliştirici:</strong> Hasan Hıncal</p>
+        <p><strong>Uygulama:</strong> Hasolve</p>
+        <p><strong>E-posta:</strong> <a href="mailto:hauselectric.app@gmail.com">hauselectric.app@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="doc-en" class="doc-section">
+      <div class="doc-header">
+        <h1>Terms of Service</h1>
+        <p class="meta">Last updated: May 9, 2025 · Hasolve v1.0</p>
+      </div>
+      <div class="info-box">ℹ️ Please read these terms carefully before using Hasolve. By using the app, you agree
+        to these terms.</div>
+
+      <h2>1. Service Description</h2>
+      <p>Hasolve is a mobile application developed for industrial equipment management, fault tracking, maintenance
+        planning, and team coordination. It offers features such as machine registration, fault reporting, work order
+        creation, and team communication.</p>
+
+      <h2>2. Acceptance of Terms</h2>
+      <p>By downloading or using the application, you agree to these Terms of Service and our Privacy Policy. If you do
+        not agree, please do not use the application.</p>
+      <ul>
+        <li>You must be at least 18 years old to use this service</li>
+        <li>You are responsible for keeping your account information accurate and up-to-date</li>
+        <li>You are responsible for the security of your account</li>
+      </ul>
+
+      <h2>3. Account Creation and Use</h2>
+      <ul>
+        <li>A valid email address is required for registration</li>
+        <li>Each person may only create one account</li>
+        <li>Sharing account credentials with others is prohibited</li>
+        <li>Keeping your password secure is your responsibility</li>
+      </ul>
+
+      <h2>4. Prohibited Uses</h2>
+      <div class="warning-box">⚠️ The following uses are strictly prohibited and may result in account termination.
+      </div>
+      <ul>
+        <li>Using the service for illegal purposes</li>
+        <li>Harassing or disturbing other users</li>
+        <li>Uploading malicious code or viruses</li>
+        <li>Reverse engineering the application</li>
+        <li>Unauthorized access to other users' accounts</li>
+        <li>Overloading the system with automated bots or scripts</li>
+      </ul>
+
+      <h2>5. Intellectual Property</h2>
+      <p>The Hasolve application, all its content, logo, and brand are owned by Hasan Hıncal and are protected by
+        copyright laws. Users may use the app for personal and commercial purposes only; copying, modifying, or
+        distributing is not permitted.</p>
+
+      <h2>6. Service Interruptions and Disclaimer</h2>
+      <ul>
+        <li>We aim to provide uninterrupted service but cannot guarantee 100% uptime</li>
+        <li>We are not responsible for interruptions due to maintenance, updates, or technical issues</li>
+        <li>We do not accept responsibility for errors resulting from user-entered data</li>
+      </ul>
+
+      <h2>7. Account Termination</h2>
+      <p>If you violate these terms, your account may be terminated without prior notice. You may delete your account at
+        any time via the app or by email.</p>
+
+      <h2>8. Changes to Terms</h2>
+      <p>We reserve the right to update these terms. Significant changes will be announced via in-app notification or
+        email. Continued use of the app after changes are published constitutes acceptance of the new terms.</p>
+
+      <h2>9. Governing Law</h2>
+      <p>These terms are governed by the laws of the Republic of Turkey. Turkish courts have jurisdiction over any
+        disputes.</p>
+
+      <h2>10. Contact</h2>
+      <div class="contact-box">
+        <p><strong>Developer:</strong> Hasan Hıncal</p>
+        <p><strong>Application:</strong> Hasolve</p>
+        <p><strong>Email:</strong> <a href="mailto:hauselectric.app@gmail.com">hauselectric.app@gmail.com</a></p>
+      </div>
+    </div>
   </div>
 
-  <!-- TÜRKÇE -->
-  <div id="doc-tr" class="doc-section visible">
-    <div class="doc-header">
-      <h1>Hizmet Şartları</h1>
-      <p class="meta">Son güncelleme: 9 Mayıs 2025 · HausElectric v1.0</p>
-    </div>
-    <div class="info-box">ℹ️ HausElectric'i kullanmadan önce lütfen bu şartları dikkatlice okuyun. Uygulamayı kullanarak bu şartları kabul etmiş sayılırsınız.</div>
+  <footer>© 2025 Hasolve · Geliştirici / Developer: Hasan Hıncal</footer>
 
-    <h2>1. Hizmetin Tanımı</h2>
-    <p>HausElectric, endüstriyel ekipman yönetimi, arıza takibi, bakım planlama ve ekip koordinasyonu için geliştirilmiş bir mobil uygulamadır. Uygulama; makine kaydı, arıza bildirimi, iş emri oluşturma ve ekip iletişimi gibi özellikler sunmaktadır.</p>
-
-    <h2>2. Kabul Koşulları</h2>
-    <p>Uygulamayı indirerek veya kullanarak bu Hizmet Şartları'nı ve Gizlilik Politikamızı kabul etmiş olursunuz. Bu şartları kabul etmiyorsanız uygulamayı kullanmayınız.</p>
-    <ul>
-      <li>18 yaşından büyük olmanız gerekmektedir</li>
-      <li>Hesap bilgilerinizi doğru ve güncel tutmakla yükümlüsünüz</li>
-      <li>Hesabınızın güvenliğinden siz sorumlusunuz</li>
-    </ul>
-
-    <h2>3. Hesap Oluşturma ve Kullanım</h2>
-    <ul>
-      <li>Kayıt için geçerli bir e-posta adresi zorunludur</li>
-      <li>Her kişi yalnızca bir hesap oluşturabilir</li>
-      <li>Hesap bilgilerini başkalarıyla paylaşmak yasaktır</li>
-      <li>Şifrenizi güvende tutmak sizin sorumluluğunuzdadır</li>
-    </ul>
-
-    <h2>4. Kabul Edilemez Kullanımlar</h2>
-    <div class="warning-box">⚠️ Aşağıdaki kullanımlar kesinlikle yasaktır ve hesabın sonlandırılmasına yol açabilir.</div>
-    <ul>
-      <li>Yasadışı amaçlarla kullanım</li>
-      <li>Diğer kullanıcıları rahatsız etme veya taciz etme</li>
-      <li>Sisteme zararlı kod veya virüs yükleme</li>
-      <li>Uygulamanın tersine mühendislik ile çözümlenmesi</li>
-      <li>Başka kullanıcıların hesaplarına yetkisiz erişim</li>
-      <li>Otomatik botlar veya scriptlerle sisteme yük bindirme</li>
-    </ul>
-
-    <h2>5. Fikri Mülkiyet</h2>
-    <p>HausElectric uygulaması, tüm içerikleri, logosu ve markası Hasan Hıncal'a aittir ve telif hakkı yasaları ile korunmaktadır. Kullanıcılar, uygulamayı yalnızca kişisel ve ticari amaçlarla kullanabilir; kopyalayamaz, değiştiremez veya dağıtamaz.</p>
-
-    <h2>6. Hizmet Kesintileri ve Sorumluluk Reddi</h2>
-    <ul>
-      <li>Hizmeti kesintisiz sunmayı hedefliyoruz, ancak %100 uptime garantisi vermiyoruz</li>
-      <li>Bakım, güncelleme veya teknik sorunlardan kaynaklı kesintilerde sorumluluğumuz bulunmamaktadır</li>
-      <li>Kullanıcı verilerinden kaynaklanan hatalar için sorumluluk kabul etmiyoruz</li>
-    </ul>
-
-    <h2>7. Hesap Sonlandırma</h2>
-    <p>Bu şartları ihlal etmeniz durumunda hesabınız önceden bildirim yapılmaksızın sonlandırılabilir. Hesabınızı istediğiniz zaman uygulama üzerinden veya e-posta ile silebilirsiniz.</p>
-
-    <h2>8. Değişiklikler</h2>
-    <p>Bu şartları güncelleme hakkını saklı tutarız. Önemli değişiklikler uygulama içi bildirim veya e-posta ile duyurulacaktır. Değişiklikler yayınlandıktan sonra uygulamayı kullanmaya devam etmeniz, yeni şartları kabul ettiğiniz anlamına gelir.</p>
-
-    <h2>9. Uygulanacak Hukuk</h2>
-    <p>Bu şartlar Türkiye Cumhuriyeti kanunlarına tabidir. Olası anlaşmazlıklarda Türk mahkemeleri yetkilidir.</p>
-
-    <h2>10. İletişim</h2>
-    <div class="contact-box">
-      <p><strong>Geliştirici:</strong> Hasan Hıncal</p>
-      <p><strong>Uygulama:</strong> HausElectric</p>
-      <p><strong>E-posta:</strong> <a href="mailto:info@hauselectric.app">info@hauselectric.app</a></p>
-    </div>
-  </div>
-
-  <!-- ENGLISH -->
-  <div id="doc-en" class="doc-section">
-    <div class="doc-header">
-      <h1>Terms of Service</h1>
-      <p class="meta">Last updated: May 9, 2025 · HausElectric v1.0</p>
-    </div>
-    <div class="info-box">ℹ️ Please read these terms carefully before using HausElectric. By using the app, you agree to these terms.</div>
-
-    <h2>1. Service Description</h2>
-    <p>HausElectric is a mobile application developed for industrial equipment management, fault tracking, maintenance planning, and team coordination. It offers features such as machine registration, fault reporting, work order creation, and team communication.</p>
-
-    <h2>2. Acceptance of Terms</h2>
-    <p>By downloading or using the application, you agree to these Terms of Service and our Privacy Policy. If you do not agree, please do not use the application.</p>
-    <ul>
-      <li>You must be at least 18 years old to use this service</li>
-      <li>You are responsible for keeping your account information accurate and up-to-date</li>
-      <li>You are responsible for the security of your account</li>
-    </ul>
-
-    <h2>3. Account Creation and Use</h2>
-    <ul>
-      <li>A valid email address is required for registration</li>
-      <li>Each person may only create one account</li>
-      <li>Sharing account credentials with others is prohibited</li>
-      <li>Keeping your password secure is your responsibility</li>
-    </ul>
-
-    <h2>4. Prohibited Uses</h2>
-    <div class="warning-box">⚠️ The following uses are strictly prohibited and may result in account termination.</div>
-    <ul>
-      <li>Using the service for illegal purposes</li>
-      <li>Harassing or disturbing other users</li>
-      <li>Uploading malicious code or viruses</li>
-      <li>Reverse engineering the application</li>
-      <li>Unauthorized access to other users' accounts</li>
-      <li>Overloading the system with automated bots or scripts</li>
-    </ul>
-
-    <h2>5. Intellectual Property</h2>
-    <p>The HausElectric application, all its content, logo, and brand are owned by Hasan Hıncal and are protected by copyright laws. Users may use the app for personal and commercial purposes only; copying, modifying, or distributing is not permitted.</p>
-
-    <h2>6. Service Interruptions and Disclaimer</h2>
-    <ul>
-      <li>We aim to provide uninterrupted service but cannot guarantee 100% uptime</li>
-      <li>We are not responsible for interruptions due to maintenance, updates, or technical issues</li>
-      <li>We do not accept responsibility for errors resulting from user-entered data</li>
-    </ul>
-
-    <h2>7. Account Termination</h2>
-    <p>If you violate these terms, your account may be terminated without prior notice. You may delete your account at any time via the app or by email.</p>
-
-    <h2>8. Changes to Terms</h2>
-    <p>We reserve the right to update these terms. Significant changes will be announced via in-app notification or email. Continued use of the app after changes are published constitutes acceptance of the new terms.</p>
-
-    <h2>9. Governing Law</h2>
-    <p>These terms are governed by the laws of the Republic of Turkey. Turkish courts have jurisdiction over any disputes.</p>
-
-    <h2>10. Contact</h2>
-    <div class="contact-box">
-      <p><strong>Developer:</strong> Hasan Hıncal</p>
-      <p><strong>Application:</strong> HausElectric</p>
-      <p><strong>Email:</strong> <a href="mailto:info@hauselectric.app">info@hauselectric.app</a></p>
-    </div>
-  </div>
-</div>
-
-<footer>© 2025 HausElectric · Geliştirici / Developer: Hasan Hıncal</footer>
-
-<script>
-  function showLang(lang, btn) {
-    document.querySelectorAll('.doc-section').forEach(el => el.classList.remove('visible'));
-    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
-    document.getElementById('doc-' + lang).classList.add('visible');
-    btn.classList.add('active');
-  }
-</script>
+  <script>
+    function showLang(lang, btn) {
+      document.querySelectorAll('.doc-section').forEach(el => el.classList.remove('visible'));
+      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('doc-' + lang).classList.add('visible');
+      btn.classList.add('active');
+    }
+  </script>
 </body>
+
 </html>
